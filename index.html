@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="900">
+<title>AI Releases — Big 3 Monitor</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --card:#ffffff; --ink:#0f1722; --muted:#5b6675;
+    --line:#e7ebf0; --accent:#0fb87a; --accent-soft:#e6f7f0;
+    --openai:#10a37f; --anthropic:#d97757; --google:#4285f4;
+    --major:#0fb87a; --shadow:0 1px 3px rgba(16,23,34,.06),0 8px 24px rgba(16,23,34,.05);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:28px 20px 56px}
+  header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:6px}
+  h1{font-size:24px;margin:0;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:13px;margin-top:4px}
+  .live{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);
+    border-radius:999px;padding:7px 13px;font-size:12.5px;color:var(--muted);white-space:nowrap;box-shadow:var(--shadow)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(15,184,122,.6);
+    animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(15,184,122,.5)}70%{box-shadow:0 0 0 7px rgba(15,184,122,0)}100%{box-shadow:0 0 0 0 rgba(15,184,122,0)}}
+  .hero{margin:20px 0 26px;background:linear-gradient(180deg,#ffffff, #fbfffd);border:1px solid var(--line);
+    border-left:4px solid var(--accent);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+  .hero .lbl{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  .hero .h{font-size:19px;font-weight:650;margin:5px 0 3px;letter-spacing:-.01em}
+  .hero .h a{color:inherit;text-decoration:none}
+  .hero .h a:hover{text-decoration:underline}
+  .hero .d{color:var(--muted);font-size:14px}
+  .hero .meta{color:var(--muted);font-size:12.5px;margin-top:7px}
+  section{margin:22px 0}
+  .vh{display:flex;align-items:center;gap:9px;margin:0 2px 11px;font-size:13px;font-weight:700;
+    letter-spacing:.03em;text-transform:uppercase;color:var(--muted)}
+  .vdot{width:10px;height:10px;border-radius:3px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden}
+  .item{padding:15px 18px;border-top:1px solid var(--line);display:flex;gap:13px;align-items:flex-start}
+  .item:first-child{border-top:none}
+  .badge{flex:none;font-size:10px;font-weight:800;letter-spacing:.05em;color:#fff;background:var(--major);
+    border-radius:6px;padding:3px 7px;margin-top:2px}
+  .badge.watch{background:#9aa6b2}
+  .body{flex:1;min-width:0}
+  .t{font-size:15.5px;font-weight:600;letter-spacing:-.01em;margin:0 0 3px}
+  .t a{color:var(--ink);text-decoration:none}
+  .t a:hover{color:var(--accent);text-decoration:underline}
+  .s{color:var(--muted);font-size:13.5px;margin:0}
+  .src{color:var(--muted);font-size:12px;margin-top:6px}
+  .src b{color:#3a4654}
+  .empty{padding:26px 18px;text-align:center;color:var(--muted);font-size:14px}
+  footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+  footer .row{display:flex;flex-wrap:wrap;gap:6px 18px}
+  .pill{display:inline-flex;align-items:center;gap:6px}
+  .note{margin-top:10px;font-size:11.5px;color:#9aa6b2}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <h1>AI Releases — Big&nbsp;3 Monitor</h1>
+      <div class="sub">Model &amp; major product releases from OpenAI · Anthropic · Google DeepMind</div>
+    </div>
+    <span class="live"><span class="dot"></span>Live · updated 24 Jun 2026, 14:00 UTC</span>
+  </header>
+
+  <div class="hero">
+    <div class="lbl">🟢 Latest major release</div>
+    <div class="h"><a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic launches Claude Tag</a></div>
+    <div class="d">An agentic tool that works like a virtual employee inside Slack — assigned tasks via @-mention, runs them end to end.</div>
+    <div class="meta">Anthropic · via Fortune · ~2h ago</div>
+  </div>
+
+  <!-- OpenAI -->
+  <section>
+    <div class="vh"><span class="vdot" style="background:var(--openai)"></span>OpenAI</div>
+    <div class="card">
+      <div class="item">
+        <span class="badge">MAJOR</span>
+        <div class="body">
+          <p class="t"><a href="https://openai.com/news" target="_blank" rel="noopener">Daybreak — tools for securing every organization</a></p>
+          <p class="s">New security product line; OpenAI is expanding Daybreak to help defenders patch open-source flaws automatically.</p>
+          <p class="src"><b>OpenAI</b> · also covered by WIRED, Infosecurity Magazine · ~5h ago</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="badge watch">WATCH</span>
+        <div class="body">
+          <p class="t"><a href="https://www.axios.com" target="_blank" rel="noopener">Reported new frontier model (unconfirmed)</a></p>
+          <p class="s">Press reports reference a new OpenAI model positioned against Anthropic's Mythos line — not yet officially announced.</p>
+          <p class="src"><b>Axios</b> · speculative · ~8h ago</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Anthropic -->
+  <section>
+    <div class="vh"><span class="vdot" style="background:var(--anthropic)"></span>Anthropic</div>
+    <div class="card">
+      <div class="item">
+        <span class="badge">MAJOR</span>
+        <div class="body">
+          <p class="t"><a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Introducing Claude Tag</a></p>
+          <p class="s">A virtual-employee agent that lives in Slack — pick it up, hand it a task by mention, and it executes autonomously.</p>
+          <p class="src"><b>Anthropic</b> · also covered by Fortune · ~2h ago</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google DeepMind -->
+  <section>
+    <div class="vh"><span class="vdot" style="background:var(--google)"></span>Google DeepMind</div>
+    <div class="card">
+      <div class="item">
+        <span class="badge watch">WATCH</span>
+        <div class="body">
+          <p class="t"><a href="https://blog.google" target="_blank" rel="noopener">DeepMind × A24 research partnership</a></p>
+          <p class="s">First-of-its-kind research collaboration — notable, but a partnership rather than a model/product release.</p>
+          <p class="src"><b>blog.google</b> · ~6h ago</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <span class="pill">🔄 Auto-refreshes every 15 min · regenerated hourly by Power Automate</span>
+      <span class="pill">🌐 Public news sources only</span>
+    </div>
+    <div class="note">
+      Headlines discovered via Google News and filtered by Claude to genuine releases (18 raw headlines → 2 major, 2 watch this run).
+      Summaries are AI-generated from public reporting and may contain errors — always confirm on the vendor's own newsroom.
+      <b>MAJOR</b> = confirmed new model/product · <b>WATCH</b> = notable but unconfirmed or non-release.
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
